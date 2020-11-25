@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增加的表单属性</title>
+    <style>
+        input::placeholder{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<!--不为空的属性 requires=requires-->
+<!--底部带有文字，并且可以改变颜色 placeholder-->
+<!--自己聚焦~刷新之后就会提交 autofocus-->
+<!--选择之前提交成功过的属性 name="search"  关闭使用autocomplete="off"-->
+<!--file 只能提交一个文件 multiple可以提交多个文件-->
+<body>
+    <form action="">
+        <input type="search" name="search" required="required"
+               placeholder="请输入数字" autocomplete="off"
+               autofocus="autofocus"
+        >
+        <input type="file" multiple="multiple">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
